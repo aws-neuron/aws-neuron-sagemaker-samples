@@ -1,17 +1,33 @@
-## My Project
+# AWS Neuron SageMaker Samples
 
-TODO: Fill this README out!
+This repository contains SageMaker Samples using `ml.inf1` and `ml.trn1` instances for machine learning (ML) inference and training workloads on the AWS ML accelerator chips [Inferentia](https://aws.amazon.com/machine-learning/inferentia/) and [Trainium](https://aws.amazon.com/machine-learning/trainium/).
 
-Be sure to:
+If you have additional SageMaker samples that you would like to contribute to this repository, please submit a pull request following the repository's contribution [guidelines](CONTRIBUTING.md).
 
-* Change the title in this README
-* Edit your repository description on GitHub
+Samples are organized by use case (training, inference)  below:
 
-## Security
+## Training
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+| Name | Description | Instance Type |
+| --- | --- | --- |
+| [trn1-bert-fine-tuning-on-SageMaker](training/trn1-bert-fine-tuning-on-sagemaker) | Sample training notebook using Hugging Face Trainer API with leveraging [Neuron Persistent Cache](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/arch/neuron-features/neuron-caching.html) | Trn1 |
 
-## License
+## Inference
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+| Name | Description | Instance Type |
+| --- | --- | --- |
 
+coming soon
+
+## Getting Help
+
+If you encounter issues with any of the samples in this repository, please open an issue via the GitHub Issues feature.
+
+## Contributing
+
+Please refer to the [CONTRIBUTING](CONTRIBUTING.md) document for details on contributing additional samples to this repository.
+
+
+## Release Notes
+
+Please refer to the [Change Log](releasenotes.md).
