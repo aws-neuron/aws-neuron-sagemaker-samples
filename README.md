@@ -1,6 +1,6 @@
 # AWS Neuron SageMaker Samples
 
-This repository contains SageMaker Samples using `ml.inf1` and `ml.trn1` instances for machine learning (ML) inference and training workloads on the AWS ML accelerator chips [Inferentia](https://aws.amazon.com/machine-learning/inferentia/) and [Trainium](https://aws.amazon.com/machine-learning/trainium/).
+This repository contains SageMaker Samples using `ml.inf2` and `ml.trn1` instances for machine learning (ML) inference and training workloads on the AWS ML accelerator chips [Inferentia](https://aws.amazon.com/machine-learning/inferentia/) and [Trainium](https://aws.amazon.com/machine-learning/trainium/).
 
 If you have additional SageMaker samples that you would like to contribute to this repository, please submit a pull request following the repository's contribution [guidelines](CONTRIBUTING.md).
 
@@ -10,14 +10,13 @@ Samples are organized by use case (training, inference)  below:
 
 | Name | Description | Instance Type |
 | --- | --- | --- |
-| [trn1-bert-fine-tuning-on-SageMaker](training/trn1-bert-fine-tuning-on-sagemaker) | Sample training notebook using Hugging Face Trainer API with leveraging [Neuron Persistent Cache](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/arch/neuron-features/neuron-caching.html) | Trn1 |
+| [BERT Fine-tuning on SageMaker](training/trn1-bert-fine-tuning-on-sagemaker) | Sample training notebook using Hugging Face Trainer API with leveraging [Neuron Persistent Cache](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/arch/neuron-features/neuron-caching.html) | Trn1 |
 
 ## Inference
 
 | Name | Description | Instance Type |
 | --- | --- | --- |
-
-coming soon
+| [BERT Inference on SageMaker](inference/inf2-bert-on-sagemaker) | Sample inference notebook using Hugging Face BERT model | Inf2, Trn1, Trn1n |
 
 ## Getting Help
 
