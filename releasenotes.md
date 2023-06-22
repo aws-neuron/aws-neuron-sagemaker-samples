@@ -1,5 +1,9 @@
 # Change Log
 
+## August, 28th 2023
+
+* Updated bert-fine-tuning SageMaker sample by replacing amazon_reviews_multi dataset with amazon_polarity as amazon_reviews_multi is no longer available on HuggingFace Hub.
+
 
 ## May, 4th 2023
 
