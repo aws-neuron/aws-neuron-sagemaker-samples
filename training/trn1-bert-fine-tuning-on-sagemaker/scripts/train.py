@@ -1,27 +1,19 @@
+import os
+# Set Neuron Persistent Cache’s root directory to SM_OUTPUT_DATA_DIR (/opt/ml/output/data/) so it will be uploaded to S3 at the end of the training job.
+os.environ['NEURON_CC_FLAGS'] = '--model-type=transformer --cache_dir=/opt/ml/output/data/'
+
+
 from transformers import AutoModelForSequenceClassification, Trainer, TrainingArguments, AutoTokenizer
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 from datasets import load_from_disk
 import logging
 import sys
 import argparse
-import os
 import tarfile
-
-# Set Neuron Persistent Cache’s root directory to SM_OUTPUT_DATA_DIR (/opt/ml/output/data/) so it will be uploaded to S3 at the end of the training job.
-os.environ['NEURON_CC_FLAGS'] = '--cache_dir=/opt/ml/output/data/'
 
 # Enable torchrun
 import torch
 import torch_xla.distributed.xla_backend
-if os.environ.get("WORLD_SIZE"):
-    torch.distributed.init_process_group("xla")
-
-# Fixup to enable distributed training with XLA
-orig_wrap_model = Trainer._wrap_model
-def _wrap_model(self, model, training=True):
-    self.args.local_rank = -1
-    return orig_wrap_model(self, model, training)
-Trainer._wrap_model = _wrap_model
 
 if __name__ == '__main__':
 

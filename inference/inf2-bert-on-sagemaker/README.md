@@ -11,7 +11,5 @@ This Jupyter Notebook should run on a ml.c5.4xlarge SageMaker Notebook instance.
 
 ## Getting started
 
-Run [inf2_bert_sagemaker.ipynb](./inf2_bert_sagemaker.ipynb) either on SageMaker notebook instance or SageMaker Studio Notebook.
-The notebook was tested on a ml.c5.4xlarge SageMaker Notebook instance with `conda_pytorch_p39` kernel.
-
-You can set up your SageMaker Notebook instance by following the [Get Started with Amazon SageMaker Notebook Instances](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-console.html) or SageMaker Studio Notebook by following the [Use Amazon SageMaker Studio Notebooks](https://docs.aws.amazon.com/sagemaker/latest/dg/notebooks.html)
+Run [inf2_bert_sagemaker.ipynb](./inf2_bert_sagemaker.ipynb) on SageMaker notebook instance.
+The notebook was tested on a `ml.c5.4xlarge` SageMaker Notebook instance with `conda_pytorch_p310` kernel.
