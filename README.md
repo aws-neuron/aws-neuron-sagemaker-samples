@@ -11,6 +11,7 @@ Samples are organized by use case (training, inference)  below:
 | Name | Description | Instance Type |
 | --- | --- | --- |
 | [BERT Fine-tuning on SageMaker](training/trn1-bert-fine-tuning-on-sagemaker) | Sample training notebook using Hugging Face Trainer API with leveraging [Neuron Persistent Cache](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/arch/neuron-features/neuron-caching.html) | Trn1 |
+| [neuron_parallel_compile on SageMaker](training/neuron_parallel_compile) | Sample training notebook showing how to leverage the [neuron_parallel_compile utility](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/frameworks/torch/torch-neuronx/api-reference-guide/training/pytorch-neuron-parallel-compile.html) for ahead-of-time compilation. | Trn1
 
 ## Inference
 
