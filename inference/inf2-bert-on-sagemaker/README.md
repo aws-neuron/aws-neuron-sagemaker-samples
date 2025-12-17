@@ -6,10 +6,10 @@ In this tutotial we will compile and deploy a pretrained BERT base model from Hu
 
 The full list of HuggingFace’s pretrained BERT models can be found in the BERT section on this page https://huggingface.co/transformers/pretrained_models.html.
 
-This Jupyter Notebook should run on a ml.c5.4xlarge SageMaker Notebook instance. You can set up your SageMaker Notebook instance by following the [Get Started with Amazon SageMaker Notebook Instances](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-console.html) documentation. 
+This Jupyter Notebook should run on a ml.inf2.xlarge SageMaker Notebook instance. You can set up your SageMaker Notebook instance by following the [Get Started with Amazon SageMaker Notebook Instances](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-console.html) documentation. 
 
 
 ## Getting started
 
 Run [inf2_bert_sagemaker.ipynb](./inf2_bert_sagemaker.ipynb) on SageMaker notebook instance.
-The notebook was tested on a `ml.c5.4xlarge` SageMaker Notebook instance with `conda_pytorch_p310` kernel.
+The notebook was tested on a `ml.inf2.xlarge` SageMaker Notebook instance with `Amazon Linux 2023` and the `conda_pytorch` kernel.
