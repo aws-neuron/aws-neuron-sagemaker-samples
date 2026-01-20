@@ -19,6 +19,7 @@ Samples are organized by use case (training, inference)  below:
 | --- | --- | --- |
 | [BERT Inference on SageMaker](inference/inf2-bert-on-sagemaker) | Sample inference notebook using Hugging Face BERT model | Inf2, Trn1, Trn1n |
 | [Stable Diffusion Inference on SageMaker](inference/stable-diffusion/) | How to compile and run HF Stable Diffusion model on SageMaker | Inf2, Trn1, Trn1n |
+| [CLIP Inference on SageMaker](inference/inf2-clip-on-sagemaker/) |Sample notebook to compile and deploy a pretrained CLIP model | Inf2, Trn1, Trn1n |
 
 ## Getting Help
 
